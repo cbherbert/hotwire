@@ -8,6 +8,17 @@ The notebook contains the questions and some tips.
 
 This notebook is adapted after a document written by Laurent Chevillard.
 
+## How to use
+
+Open a terminal and type the following commands:
+
+```
+git clone https://framagit.org/cherbert/hotwire
+cd hotwire && make install
+```
+
+This will automatically download the data, setup a virtual environment and open the notebook in your browser.
+
 ## Prospects
 
 In the future I may add data from Direct Numerical Simulations, in addition to the experimental data.
