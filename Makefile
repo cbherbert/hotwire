@@ -12,5 +12,8 @@ DataJet:
 install: $(VIRTUAL_ENV) DataJet
 	$(VIRTUAL_ENV)/bin/jupyter notebook hotwire.ipynb
 
+solution:
+	git checkout $(shell git remote)/solution hotwire-solution.ipynb data_structure_functions.npz
+
 clean:
 	rm -rf $(VIRTUAL_ENV) DataJet
