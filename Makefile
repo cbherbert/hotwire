@@ -1,4 +1,4 @@
-LINK_DATA=https://www.dropbox.com/s/mpqinbudtp64iki/DataJet.tar.gz
+LINK_DATA=https://www.dropbox.com/s/jed6zrlag3yzaxi/DataJet.tar.gz?dl=0
 VIRTUAL_ENV=venv
 
 $(VIRTUAL_ENV):
