@@ -1,4 +1,4 @@
-LINK_DATA=https://www.dropbox.com/s/jed6zrlag3yzaxi/DataJet.tar.gz?dl=0
+LINK_DATA=https://www.dropbox.com/s/ssagp9xkpvxuhgw/datajet.h5?dl=0
 VIRTUAL_ENV=venv
 
 $(VIRTUAL_ENV):
@@ -6,11 +6,11 @@ $(VIRTUAL_ENV):
 	virtualenv -p $(shell which python3) $@
 	$@/bin/pip install -r requirements.txt
 
-DataJet:
-	wget $(LINK_DATA) -O - | tar xz
+datajet.h5:
+	wget $(LINK_DATA) -O $@
 
-install: $(VIRTUAL_ENV) DataJet
+install: $(VIRTUAL_ENV) datajet.h5
 	$(VIRTUAL_ENV)/bin/jupyter notebook hotwire.ipynb
 
 clean:
-	rm -rf $(VIRTUAL_ENV) DataJet
+	rm -rf $(VIRTUAL_ENV) datajet.h5
