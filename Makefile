@@ -5,6 +5,7 @@ $(VIRTUAL_ENV):
 	#python3 -m venv $@ # This is a separate package on Ubuntu/Debian, use virtualenv instead
 	virtualenv -p $(shell which python3) $@
 	$@/bin/pip install -r requirements.txt
+	$@/bin/pip install jupyter
 
 datajet.h5:
 	wget $(LINK_DATA) -O $@
