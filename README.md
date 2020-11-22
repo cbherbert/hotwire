@@ -10,6 +10,18 @@ This notebook is adapted after a document written by Laurent Chevillard.
 
 ## How to use
 
+### On the cloud
+
+You can try this notebook without installing or downloading anything on your machine, by using Binder:
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/git/https%3A%2F%2Fframagit.org%2Fcherbert%2Fhotwire/test)
+
+However, depending on the resources available on the machine assigned to you, some questions may require handling the memory carefully.
+For instance, the solution notebook cannot be run entirely on most binder hosts in its current form.
+If you use this repository for teaching, we recommand for now either using a computer room in your university, or giving remote access (through SSH) to dedicated machines in your department to the students. In both cases, follow the instructions in the next section after logging in.
+An alternative is to setup your own `binderhub` instance.
+
+### On a local machine
+
 Open a terminal and type the following commands:
 
 ```
