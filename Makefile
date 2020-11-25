@@ -1,4 +1,5 @@
 LINK_DATA=https://www.dropbox.com/s/ssagp9xkpvxuhgw/datajet.h5?dl=0
+SCRATCH=/scratch/TP_turbulence_2020
 VIRTUAL_ENV=venv
 
 $(VIRTUAL_ENV):
@@ -8,7 +9,7 @@ $(VIRTUAL_ENV):
 	$@/bin/pip install jupyter
 
 datajet.h5:
-	wget $(LINK_DATA) -O $@
+	[ -e "$(SCRATCH)/$@" ] && ln -s "$(SCRATCH)/$@" $@ || wget $(LINK_DATA) -O $@
 
 install: $(VIRTUAL_ENV) datajet.h5
 	$(VIRTUAL_ENV)/bin/jupyter notebook hotwire.ipynb
