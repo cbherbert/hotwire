@@ -13,7 +13,7 @@ This notebook is adapted after a document written by Laurent Chevillard.
 ### On the cloud
 
 You can try this notebook without installing or downloading anything on your machine, by using Binder:
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/git/https%3A%2F%2Fframagit.org%2Fcherbert%2Fhotwire)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/git/https%3A%2F%2Fframagit.org%2Fcherbert%2Fhotwire/master)
 
 However, depending on the resources available on the machine assigned to you, some questions may require handling the memory carefully.
 For instance, the solution notebook cannot be run entirely on most binder hosts in its current form.
