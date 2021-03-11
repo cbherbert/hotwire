@@ -2,8 +2,7 @@ LINK_DATA=https://www.dropbox.com/s/ssagp9xkpvxuhgw/datajet.h5?dl=0
 VIRTUAL_ENV=venv
 
 $(VIRTUAL_ENV):
-	#python3 -m venv $@ # This is a separate package on Ubuntu/Debian, use virtualenv instead
-	virtualenv -p $(shell which python3) $@
+	python3 -m venv $@
 	$@/bin/pip install -r requirements.txt
 	$@/bin/pip install jupyter
 
