@@ -14,5 +14,5 @@ numpy==1.19.3             # via -r requirements.in, h5py, matplotlib, scipy
 pillow==8.0.1             # via matplotlib
 pyparsing==2.4.7          # via matplotlib
 python-dateutil==2.8.1    # via matplotlib
-scipy==1.5.3              # via -r requirements.in
+scipy==1.5.4              # via -r requirements.in
 six==1.15.0               # via cycler, python-dateutil
